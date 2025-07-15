@@ -10,7 +10,7 @@ try:
     while True:
         steps = 100
         for i in range(steps):
-            led.value = (sin(i / steps * pi) + 1) / 2  # 0→1→0
+            led.value = (sin(i / steps * 2 * pi) + 1) / 2  # 0→1→0
             sleep(period / steps)
 except KeyboardInterrupt:
     led.off()
